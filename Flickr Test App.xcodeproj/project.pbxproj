@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		07ACAF972020DF55003B4866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ACAF962020DF55003B4866 /* AppDelegate.swift */; };
-		07ACAF992020DF55003B4866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ACAF982020DF55003B4866 /* ViewController.swift */; };
+		07ACAF992020DF55003B4866 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ACAF982020DF55003B4866 /* FeedViewController.swift */; };
 		07ACAF9C2020DF55003B4866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ACAF9A2020DF55003B4866 /* Main.storyboard */; };
 		07ACAF9E2020DF55003B4866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07ACAF9D2020DF55003B4866 /* Assets.xcassets */; };
 		07ACAFA12020DF55003B4866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ACAF9F2020DF55003B4866 /* LaunchScreen.storyboard */; };
+		07ACAFA92020E354003B4866 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ACAFA82020E354003B4866 /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07ACAF932020DF55003B4866 /* Flickr Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickr Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ACAF962020DF55003B4866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07ACAF982020DF55003B4866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07ACAF982020DF55003B4866 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		07ACAF9B2020DF55003B4866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07ACAF9D2020DF55003B4866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07ACAFA02020DF55003B4866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07ACAFA22020DF55003B4866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07ACAFA82020E354003B4866 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				07ACAF962020DF55003B4866 /* AppDelegate.swift */,
-				07ACAF982020DF55003B4866 /* ViewController.swift */,
+				07ACAF982020DF55003B4866 /* FeedViewController.swift */,
+				07ACAFA82020E354003B4866 /* FeedTableViewCell.swift */,
 				07ACAF9A2020DF55003B4866 /* Main.storyboard */,
 				07ACAF9D2020DF55003B4866 /* Assets.xcassets */,
 				07ACAF9F2020DF55003B4866 /* LaunchScreen.storyboard */,
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07ACAF992020DF55003B4866 /* ViewController.swift in Sources */,
+				07ACAF992020DF55003B4866 /* FeedViewController.swift in Sources */,
+				07ACAFA92020E354003B4866 /* FeedTableViewCell.swift in Sources */,
 				07ACAF972020DF55003B4866 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H2J8552ML;
 				INFOPLIST_FILE = "Flickr Test App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sergeybutorin.Flickr-Test-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3H2J8552ML;
 				INFOPLIST_FILE = "Flickr Test App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sergeybutorin.Flickr-Test-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";

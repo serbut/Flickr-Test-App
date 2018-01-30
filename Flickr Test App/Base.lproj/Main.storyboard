@@ -1,24 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rqd-cj-bWk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Feed-->
+        <scene sceneID="dfr-TV-9ND">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="Feed" id="E25-jj-U2c" customClass="FeedViewController" customModule="Flickr_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rfS-Vg-Rqr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uWY-U6-gYy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" id="IWX-cw-n36" customClass="FeedTableViewCell" customModule="Flickr_Test_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IWX-cw-n36" id="bSz-na-XVO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2I1-ln-ldY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2I1-ln-ldY" firstAttribute="top" secondItem="bSz-na-XVO" secondAttribute="top" id="8jq-Lq-fcS"/>
+                                                <constraint firstItem="2I1-ln-ldY" firstAttribute="leading" secondItem="bSz-na-XVO" secondAttribute="leading" id="kR4-e3-IL5"/>
+                                                <constraint firstAttribute="trailing" secondItem="2I1-ln-ldY" secondAttribute="trailing" id="qx0-sI-dwP"/>
+                                                <constraint firstAttribute="bottom" secondItem="2I1-ln-ldY" secondAttribute="bottom" id="yLl-Jz-Lka"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="2I1-ln-ldY" id="vn1-OA-Ymr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uWY-U6-gYy" firstAttribute="bottom" secondItem="UEa-dq-L2b" secondAttribute="bottom" id="7xn-fs-I3U"/>
+                            <constraint firstItem="uWY-U6-gYy" firstAttribute="top" secondItem="rfS-Vg-Rqr" secondAttribute="top" id="BvF-qF-0a5"/>
+                            <constraint firstItem="uWY-U6-gYy" firstAttribute="trailing" secondItem="UEa-dq-L2b" secondAttribute="trailing" id="tBK-hR-0Ml"/>
+                            <constraint firstItem="uWY-U6-gYy" firstAttribute="leading" secondItem="UEa-dq-L2b" secondAttribute="leading" id="ymz-GO-TeQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UEa-dq-L2b"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Feed" id="rii-FU-vNn"/>
+                    <connections>
+                        <outlet property="tableView" destination="uWY-U6-gYy" id="rMK-Ck-7lk"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qa3-nq-WJS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="724" y="287.40629685157421"/>
+        </scene>
+        <!--Blank-->
+        <scene sceneID="iJe-yP-cOb">
+            <objects>
+                <viewController title="Blank" id="oQ7-aW-yJS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ct6-h7-1F3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ri5-Pc-gIC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blank" id="KPp-fu-iaA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmS-Xg-VOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="-377"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7qL-Nc-UUS">
+            <objects>
+                <tabBarController id="rqd-cj-bWk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zi3-Gl-pL0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oQ7-aW-yJS" kind="relationship" relationship="viewControllers" id="b4Q-Fs-ZBc"/>
+                        <segue destination="E25-jj-U2c" kind="relationship" relationship="viewControllers" id="JF7-AM-wg9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYV-SB-S0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="-45"/>
         </scene>
     </scenes>
 </document>
