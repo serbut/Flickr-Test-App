@@ -55,7 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UEa-dq-L2b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="rii-FU-vNn"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Feed" id="rii-FU-vNn"/>
                     <connections>
                         <outlet property="tableView" destination="uWY-U6-gYy" id="rMK-Ck-7lk"/>
                     </connections>
@@ -74,16 +74,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ri5-Pc-gIC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Blank" id="KPp-fu-iaA"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Blank" id="KPp-fu-iaA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmS-Xg-VOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="725" y="-377"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="7qL-Nc-UUS">
             <objects>
-                <tabBarController id="rqd-cj-bWk" sceneMemberID="viewController">
+                <tabBarController id="rqd-cj-bWk" customClass="TabBarViewController" customModule="Flickr_Test_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zi3-Gl-pL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

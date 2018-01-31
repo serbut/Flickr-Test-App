@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078488162021D5AD002C919C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078488152021D5AD002C919C /* TabBarViewController.swift */; };
+		0784881A2021D8B5002C919C /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078488192021D8B5002C919C /* DownloadManager.swift */; };
 		07ACAF972020DF55003B4866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ACAF962020DF55003B4866 /* AppDelegate.swift */; };
 		07ACAF992020DF55003B4866 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ACAF982020DF55003B4866 /* FeedViewController.swift */; };
 		07ACAF9C2020DF55003B4866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07ACAF9A2020DF55003B4866 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		078488152021D5AD002C919C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		078488192021D8B5002C919C /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		07ACAF932020DF55003B4866 /* Flickr Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flickr Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07ACAF962020DF55003B4866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07ACAF982020DF55003B4866 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				07ACAF962020DF55003B4866 /* AppDelegate.swift */,
 				07ACAF982020DF55003B4866 /* FeedViewController.swift */,
 				07ACAFA82020E354003B4866 /* FeedTableViewCell.swift */,
+				078488152021D5AD002C919C /* TabBarViewController.swift */,
+				078488192021D8B5002C919C /* DownloadManager.swift */,
 				07ACAF9A2020DF55003B4866 /* Main.storyboard */,
 				07ACAF9D2020DF55003B4866 /* Assets.xcassets */,
 				07ACAF9F2020DF55003B4866 /* LaunchScreen.storyboard */,
@@ -222,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078488162021D5AD002C919C /* TabBarViewController.swift in Sources */,
+				0784881A2021D8B5002C919C /* DownloadManager.swift in Sources */,
 				07ACAF992020DF55003B4866 /* FeedViewController.swift in Sources */,
 				07ACAFA92020E354003B4866 /* FeedTableViewCell.swift in Sources */,
 				07ACAF972020DF55003B4866 /* AppDelegate.swift in Sources */,
